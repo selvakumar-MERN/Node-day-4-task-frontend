@@ -9,7 +9,7 @@ import axios from 'axios';
 function Studentlist(props) {
     const [student,setstudent]=useState("")
     useEffect(()=>{
-        axios.get('http://localhost:3050/admin/getstudent')
+        axios.get('https://dashboard-admin-q4jx.onrender.com/admin/getstudent')
         .then((res)=>{
         
             setstudent(res.data)
@@ -20,7 +20,7 @@ function Studentlist(props) {
     },[])
 
     const deleteStudent=(id)=>{
-        axios.delete(`http://localhost:3050/admin/deletestudent/${id}`)
+        axios.delete(`https://dashboard-admin-q4jx.onrender.com/admin/deletestudent/${id}`)
         .then((res)=>{
             return res
             
