@@ -9,7 +9,7 @@ import axios from 'axios';
 function Stafflist(props) {
     const [staff,setstaff]=useState("")
     useEffect(()=>{
-        axios.get('http://localhost:3050/admin/getstaff')
+        axios.get('https://dashboard-admin-q4jx.onrender.com/admin/getstaff')
         .then((res)=>{
             setstaff(res.data)
         })
@@ -19,7 +19,7 @@ function Stafflist(props) {
     },[])
 
     const deletestaff=(id)=>{
-        axios.delete(`http://localhost:3050/admin/deletestaff/${id}`)
+        axios.delete(`https://dashboard-admin-q4jx.onrender.com/admin/deletestaff/${id}`)
         .then((res)=>{
             return res
             
