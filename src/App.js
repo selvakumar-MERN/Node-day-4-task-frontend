@@ -9,7 +9,6 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Stafflist from './Components/Officestaffdetails/Stafflist';
 import Addstaff from './Components/Officestaffdetails/Addstaff';
 import Editstaffprofile from './Components/Officestaffdetails/Editstaffprofile';
-import Userprovider from './Userprovider';
 import { useState } from 'react';
 
 
@@ -29,7 +28,7 @@ function App() {
   }
 
   return (
-    <Userprovider>
+    
     <BrowserRouter>
     <Routes>
     <Route exact
@@ -74,7 +73,7 @@ function App() {
       </Route>
     </Routes>
     </BrowserRouter>
-    </Userprovider>
+    
    
   );
 }
