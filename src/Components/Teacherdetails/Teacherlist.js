@@ -8,7 +8,7 @@ import axios from 'axios';
 function Teacherlist(props) {
     const [teacher,setteacher]=useState("")
     useEffect(()=>{
-        axios.get('http://localhost:3050/admin/getteacher')
+        axios.get('https://dashboard-admin-q4jx.onrender.com/admin/getteacher')
         .then((res)=>{
             setteacher(res.data)
         })
@@ -18,7 +18,7 @@ function Teacherlist(props) {
     },[])
 
     const deleteTeacher=(id)=>{
-        axios.delete(`http://localhost:3050/admin/deleteteacher/${id}`)
+        axios.delete(`https://dashboard-admin-q4jx.onrender.com/admin/deleteteacher/${id}`)
         .then((res)=>{
             return res
             
