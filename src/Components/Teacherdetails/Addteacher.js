@@ -19,7 +19,7 @@ function Addteacher() {
 
   const submit = (e) => {
     e.preventDefault()
-    axios.post('http://localhost:3050/admin/addteacher',users)
+    axios.post('https://dashboard-admin-q4jx.onrender.com/admin/addteacher',users)
         .then((res)=>{
             return res
         })
