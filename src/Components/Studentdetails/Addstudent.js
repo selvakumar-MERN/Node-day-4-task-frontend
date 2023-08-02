@@ -21,7 +21,7 @@ function Addstudent () {
    
     const submit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3050/admin/addstudent',users)
+        axios.post('https://dashboard-admin-q4jx.onrender.com/admin/addstudent',users)
         .then((res)=>{
             return res
         })
