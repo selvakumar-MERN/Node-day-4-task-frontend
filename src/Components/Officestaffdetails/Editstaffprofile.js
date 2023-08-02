@@ -19,7 +19,7 @@ function Editstaffprofile(props) {
   const update = (e,id) => {
     
     e.preventDefault()
-    axios.patch(`http://localhost:3050/admin/updatestaff/${id}`,user)
+    axios.patch(`https://dashboard-admin-q4jx.onrender.com/admin/updatestaff/${id}`,user)
     .then((res)=>{
         return res
        
