@@ -20,7 +20,7 @@ function Editteacherprofile(props) {
   const update = (e,id) => {
     
     e.preventDefault()
-    axios.patch(`http://localhost:3050/admin/updateteacher/${id}`,user)
+    axios.patch(`https://dashboard-admin-q4jx.onrender.com/admin/updateteacher/${id}`,user)
     .then((res)=>{
         return res
        
