@@ -20,7 +20,7 @@ function Addstaff() {
   const submit = (e) => {
     
     e.preventDefault()
-    axios.post('http://localhost:3050/admin/addstaff',users)
+    axios.post('https://dashboard-admin-q4jx.onrender.com/admin/addstaff',users)
         .then((res)=>{
             return res
         })
